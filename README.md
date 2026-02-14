@@ -4,7 +4,7 @@ Budget 4chan (imageboard without images and boards, not even threads) made with 
 
 No SQL, as simple read- and append-only CSV files are much safer, and text is automatically escaped, its perfectly safe from HTML/JS injection.
 
-This is a stripped down version of the forum page from my [website](https://bitpince.hu), that you can modify however you want, since there is no license. Go do whatever you want with it.
+This is a stripped down version of the forum page from my [website](https://bitpince.hu), that you can modify however you want, since its licensed under the Unlicense. Go do whatever you want with it.
 
 
 
