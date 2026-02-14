@@ -1,10 +1,15 @@
 # Forum Base
 
 Budget 4chan (imageboard without images and boards, not even threads)
+
 Made with PHP+HTML+CSS+JS
+
 No SQL, as simple read- and append-only CSV files are much safer
+
 Text is automatically escaped, its perfectly safe from HTML/JS injection
+
 This is a stripped down version of the forum page from my [website](https://bitpince.hu), that you can modify however you want
+
 There is no license, do whatever you want with it
 
 
