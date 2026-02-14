@@ -21,4 +21,5 @@ This is a stripped down version of the forum page from my [website](https://bitp
 ## Database Format:
 
 usernames.csv: name, password, role, optional ip
+
 posts.csv: id, date (YYYY/MM/DD hh:mm:ss), username, text, ip, special post flag
