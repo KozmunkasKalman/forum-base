@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <title>Forum / Help</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  	<div class="topbar">
+      <div class="title"><a href="forum.php">Forum</a> / Help</div>
+      <ul>
+        <li>≡</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="index">
+        <ul>
+          <li><a href="#rules">Rules</a></li>
+          <li><a href="#info">Information</a></li>
+          <li><a href="#texthelp">Text Formatting</a></li>
+        </ul>
+      </div>
+      <br>
+      <hr>
+      <br>
+      <h1 id="rules">Rules</h1>
+      Last modified: 1970/01/01
+      <ul>
+        <li><h2 class="section">I. Definitions</h2></li>
+        <li class="definition"><b>Something:</b> Something</li>
+        <li><h2 class="section">II. Rules</h2></li>
+        <li class="rule">1. Nobody reads this anyways:</li>
+        <li class="subrule">a) something,</li>
+        <li class="subrule">b) something more.</li>
+      </ul>
+      <br>
+      <hr>
+      <br>
+      <h1 id="info">Information</h1>
+      <ul>
+        <li><h2 class="section">Information header</h2></li>
+        <li class="infoparagraph">Here is some SNCA</li>
+      </ul>
+      <br>
+      <hr>
+      <br>
+      <h1 id="texthelp">Text Formatting</h1>
+      <h2 class="subtitle">Text formatting help table:</h2>
+      <table>
+        <thead><tr>
+          <th>Name</th>
+          <th>Marking</th>
+          <th>Appearance</th>
+          <th>HTML</th>
+          <th>Origin</th>
+          <th>Other comment</th>
+        </tr></thead>
+        <tbody><tr>
+          <td>Italic</td>
+          <td>*text*</td>
+          <td><i>text</i></td>
+          <td>&lt;i&gt;text&lt;/i&gt;</td>
+          <td rowspan="11">Markdown standard</td>
+          <td></td>
+        </tr><tr>
+          <td>Bold</td>
+          <td>**text**</td>
+          <td><b>text</b></td>
+          <td>&lt;b&gt;text&lt;/b&gt;</td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Bold & Italic</td>
+          <td>***text***</td>
+          <td><b><i>text</i></b></td>
+          <td>&lt;b&gt;&lt;i&gt;text&lt;/i&gt;&lt;/b&gt;</td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Underlined</td>
+          <td>_text_<br>__text__</td>
+          <td><u>text</u></td>
+          <td>&lt;u&gt;text&lt;/u&gt;</td>
+          <!---->
+          <td>_text_ is standard breaking</td>
+        </tr><tr>
+          <td>Strikethrough</td>
+          <td>~~text~~<br>--text--</td>
+          <td><s>text</s></td>
+          <td>&lt;s&gt;text&lt;/s&gt;</td>
+          <!---->
+          <td>--text-- is standard breaking</td>
+        </tr><tr>
+          <td>Large text</td>
+          <td># text</td>
+          <td><span class="bigtext">text</span></td>
+          <td></td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Tiny text</td>
+          <td>-# text<br>.:text:.</td>
+          <td><span class="smalltext">text</span></td>
+          <td></td>
+          <!---->
+          <td>.:text:. is standard breaking</td>
+        </tr><tr>
+          <td>Hidden, spoiler</td>
+          <td>||text||</td>
+          <td><span class="spoiler">text</span></td>
+          <td></td>
+          <!---->
+          <td>soyjak.party kolyma spoiler</td>
+        </tr><tr>
+          <td>Hyperlink</td>
+          <td>[text](url)</td>
+          <td><a href="#texthelp" class="darklink">text</a></td>
+          <td>&lt;a href="url"&gt;<wbr>text<wbr>&lt;/a&gt;</td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Inline code</td>
+          <td>``code``</td>
+          <td><code class="codeblock-inline">code</code></td>
+          <td>&lt;code&gt;code&lt;/code&gt;</td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Multiline code block</td>
+          <td>```<br>code<br>```<br>```lang<br>code<br>```</td>
+          <td><pre class="codeblock"><code>code</code></pre><br><pre class="codeblock"><code class="lang">lang</code><br><code>code</code></pre></td>
+          <td></td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Post linking</td>
+          <td>@1</td>
+          <td><a class="postlink" href="#texthelp">@1</a></td>
+          <td></td>
+          <td></td>
+          <td>4chan equivalent: <b>>>1</b></td>
+        </tr><tr>
+          <td>Greentext</td>
+          <td>&gt;text</td>
+          <td><span class="greentext">&gt;text</span></td>
+          <td></td>
+          <td rowspan="1">4chan.org</td>
+          <td></td>
+        </tr><tr>
+          <td>Orangetext</td>
+          <td>&lt;text</td>
+          <td><span class="orangetext">&lt;text</span></td>
+          <td></td>
+          <td rowspan="7">soyjak.party</td>
+          <td></td>
+        </tr><tr>
+          <td>Bluetext</td>
+          <td>^text</td>
+          <td><span class="bluetext">^text</span></td>
+          <td></td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Glowtext</td>
+          <td>(((text)))</td>
+          <td><span class="glowtext">(((text)))</span></td>
+          <td></td>
+          <!---->
+          <td><a href="https://youtu.be/81jKb5d3FW8" class="darklink">Terry Davis</a></td>
+        </tr><tr>
+          <td>Shinetext</td>
+          <td>%%text%%</td>
+          <td><span class="shinetext">text</span></td>
+          <td></td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Ragetext</td>
+          <td>!!!text!!!</td>
+          <td><span class="ragetext">text!!!</span></td>
+          <td></td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Gaytext</td>
+          <td>~*~text~*~</td>
+          <td><span class="gaytext">text</span></td>
+          <td></td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Spintext</td>
+          <td>&amp;-text-</td>
+          <td><span class="spintext">text</span></td>
+          <td></td>
+          <!---->
+          <td></td>
+        </tr><tr>
+          <td>Comment</td>
+          <td>//text<br>// text</td>
+          <td><span class="comment">text</span></td>
+          <td></td>
+          <td>C/C++</td>
+          <td></td>
+        </tr></tbody>
+      </table>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,454 @@
+* {
+  font-family: "Arial";
+}
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #262626;
+  color: #f4f4f4;
+  margin: 0px;
+  padding: 0px;
+}
+
+.topbar {
+  height: 64px;
+  width: 100%;
+  margin: 0;
+  margin-top: -2px;
+  padding: 0;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  background-color : #161616;
+  color: #f4f4f4;
+  font-size: 24pt;
+  font-weight: bold;
+  z-index: 9999;
+}
+.topbar .title {
+  margin-left: 8px;
+}
+.topbar ul {
+  padding: 0;
+  margin-right: 8px;
+}
+.topbar li {
+  color: #f4f4f4;
+  margin-right: 16px;
+  list-style: none;
+  display: inline-block;
+  user-select: none;
+}
+.topbar a:link,
+.topbar a:visited {
+  color: #0f62fe;
+  text-decoration: none;
+}
+.topbar a:hover {
+  color: #4589ff;
+  text-decoration: underline;
+}
+.topbar li a:link,
+.topbar li a:visited {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+.topbar li a:hover {
+  color: #a6c8ff;
+  text-decoration: underline;
+}
+  
+
+
+/* site content */
+.content {
+  margin: 0;
+  margin-top: 64px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-style: solid 2px;
+  border-color: #161616;
+}
+
+.content h1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 36pt;
+}
+.content h2 {
+  margin-top: 8px;
+  margin-bottom: 32px;
+  font-size: 24pt;
+}
+
+.content a:link,
+.content a:visited {
+  color: #0f62fe;
+  text-decoration: none;
+}
+.content a:hover {
+  color: #4589ff;
+  text-decoration: underline;
+}
+
+.content ul {
+  margin: 0;
+  margin-top: 8px;
+  margin-right: 16px;
+  padding: 0;
+}
+.content li {
+  margin-bottom: 8px;
+  list-style: none;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+.content code {
+  font-family: 'Courier New', monospace;
+}
+
+.content table {
+  font-size: 16pt;
+  background-color: #ffffff;
+  border: 2px solid #6f6f6f;
+  color: #000000;
+  border-collapse: collapse;
+}
+.content th,
+.content td {
+  padding: 10px;
+  border: 2px solid #6f6f6f;
+}
+
+
+
+/* forum */
+/* post form */
+.content .post-form {
+  margin-left: 24px;
+  margin-right: 28px;
+  padding: 16px;
+  background-color: #ffffff;
+}
+.content .post-form .error {
+  margin-bottom: 12px;
+  color: #ee0713;
+  font-weight: bold;
+  font-size: 16pt;
+}
+.content .post-form .username {
+  width: 320px;
+  min-height: 32px;
+  margin-bottom: 8px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c6c6c6;
+  font-size: 16pt;
+}
+.content .post-form .username::placeholder {
+  color: #a8a8a8;
+  font-size: 16pt;
+}
+.content .post-form textarea {
+  margin-bottom: 4px;
+  padding: 8px;
+  min-height: 128px;
+  width: calc(100% - 20px);
+  border-style: solid;
+  border-width: 2px;
+  border-color: #c6c6c6;
+  font-size: 16pt;
+  resize: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.content .post-form textarea::placeholder {
+  color: #8d8d8d;
+  font-size: 16pt;
+}
+.content .post-form button {
+  padding: 8px 16px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #6f6f6f;
+  font-size: 18pt;
+  cursor: pointer;
+}
+
+/* posts */
+.content .posts {
+  margin-top: 2px;
+  margin-left: 24px;
+  margin-right: 28px;
+}
+
+.content .post {
+  margin-bottom: 2px;
+  padding: 16px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16pt;
+}
+
+.post.highlight {
+  background-color: #ccf7d7;
+  transition: background-color 1.0s ease;
+}
+.post.highlight.fade-out {
+  background-color: #ffffff;
+  transition: background-color 2.0s ease;
+}
+.post.new {
+  background-color: #ffe7cc;
+  transition: background-color 1.0s ease;
+}
+.post.new.fade-out {
+  background-color: #ffffff;
+  transition: background-color 5.0s ease;
+}
+
+/* metadata */
+.content .meta {
+  font-size: 20pt;
+  color: #000000;
+  margin-bottom: 16px;
+}
+.content .post.deleted .meta {
+  color: #525252 !important;
+}
+
+.content .meta .repairman {
+  color: #003a6d;
+}
+.content .meta .janitor {
+  color: #004144;
+}
+.content .meta .supporter {
+  color: #044317;
+}
+.content .meta .emacs-user {
+  color: #402D5B;
+}
+
+.content .meta .replylink:link,
+.content .meta .replylink:visited {
+  text-decoration: none;
+  color: #198038 !important;
+}
+.content .meta .replylink:hover {
+  text-decoration: underline;
+  color: #42be65 !important;
+}
+
+.content .post .postbody {
+  font-size: 16pt;
+}
+.content .post.deleted .postbody {
+  font-weight: bold;
+  color: #525252 !important;
+}
+
+.content i {
+  font-style: italic;
+}
+.content b {
+  font-weight: bold;
+}
+.content u {
+  text-decoration: underline;
+}
+.content s {
+}
+.content .bigtext {
+  font-size: 24pt !important;
+}
+.content .smalltext {
+  font-size: 10pt !important;
+}
+.content .spoiler {
+  filter: blur(6px);
+  transition: filter 0.25s ease;
+  cursor: help;
+}
+.content .spoiler:hover {
+  filter: blur(0);
+}
+.content .greentext {
+  color: #0e6027;
+}
+.content .orangetext {
+  color: #ba4e00;
+}
+.content .bluetext {
+  color: #6384bd;
+}
+.content .glowtext {
+  color: #000000;
+  text-shadow: #00fe20 0px 0px 24px, #00fe20 0px 0px 4px;
+}
+.content .shinetext {
+  background: linear-gradient(to bottom, #fccd27, #f1c21b, #de9a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 24px #fddc69, 0px 0px 4px #fccd27
+}
+.content .ragetext {
+  color: #af0a0f;
+  text-shadow: #ff0000 0px 0px 24px, #ff0000 0px 0px 4px;
+  display: inline-block;
+  animation: shake 0.2s infinite;
+}
+.content .gaytext {
+  font-weight: bold;
+  background: linear-gradient(105deg, red, orange, yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content .spintext {
+  animation: rotation 1s infinite linear;
+  display: inline-block;
+  word-break: break-all;
+}
+
+.content .codeblock {
+  margin: 0;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  margin-right: 32px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #d1d1d1;
+  overflow-x: auto;
+}
+.content .codeblock .lang {
+  padding-bottom: 8px;
+  color: #00539a;
+}
+.content .codeblock code br {
+  display: none;
+}
+.content .codeblock-inline {
+  margin: 0;
+  margin-left: -4px;
+  margin-right: -4px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  background-color: #d1d1d1;
+}
+
+.content .comment {
+  opacity: 50%;
+}
+
+.content .darklink:link,
+.content .darklink:visited,
+.content .post .postbody a:link,
+.content .post .postbody a:visited {
+  color: #0043ce;
+  text-decoration: none;
+  font-weight: bold;
+}
+.content .darklink:hover,
+.content .post .postbody a:hover {
+  color: #0f62fe;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.content .postlink:link,
+.content .postlink:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #198038 !important;
+}
+.content .postlink:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #42be65 !important;
+}
+.content .post.deleted {
+  background-color: #c6c6c6 !important;
+  font-style: italic;
+}
+
+.content .index {
+  display: flex;
+  flex-wrap: wrap;
+}
+:target {
+  scroll-margin-top: 80px;
+}
+.content hr {
+  border: none;
+  height: 2px;
+  background-color: #f6f6f6;
+}
+.content .section {
+  margin: 0;
+  margin-top: 24px;
+  font-size: 24pt;
+}
+.content .definition,
+.content .rule,
+.content .infoparagraph {
+  margin-bottom: 8px;
+  margin-left: 8px;
+  list-style: none;
+  font-weight: normal !important;
+  font-size: 20pt;
+}
+.content .infoparagraph code {
+  margin: 0;
+  margin-left: -4px;
+  margin-right: -4px;
+  padding: 2px 6px;
+  border-radius: 8px;
+  background-color: #161616;
+}
+.content .subrule {
+  margin-bottom: 8px;
+  margin-left: 20px;
+  list-style: none;
+  font-weight: normal !important;
+  font-size: 16pt;
+}
+.content .subtitle {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 24pt;
+}
+
+
+
+/* misc */
+@keyframes shake {
+  0% { transform:translate(1px,1px) }
+  12% { transform:translate(2px,0px) }
+  25% { transform:translate(0px,-2px) }
+  37% { transform:translate(-1px,0px) }
+  50% { transform:translate(-2px,2px) }
+  62% { transform:translate(2px,-2px) }
+  75% { transform:translate(0px,-2px) }
+  87% { transform:translate(-1px,1px) }
+  100% { transform:translate(1px,1px) }
+}
+@keyframes rotation {
+  from {
+    transform: rotateX(0deg)
+  }
+  to {
+    transform: rotateX(359deg)
+  }
+}
